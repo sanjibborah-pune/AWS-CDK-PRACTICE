@@ -26,7 +26,7 @@ cdk --version
 # create venv
 python -m venv .venv
 # activate venv (PowerShell)
-.\.venv\Scripts\Activate.ps1
+.venv\Scripts\activate
 ```
 
 3. Install Python dependencies (this repository includes `requirements.txt`):
@@ -47,7 +47,7 @@ aws configure
 
 ```powershell
 # Example: replace <ACCOUNT_ID> and <REGION> or use default environment
-cdk bootstrap aws://<ACCOUNT_ID>/<REGION>
+cdk bootstrap --profile profilename
 ```
 
 6. Synthesize the CloudFormation template:
